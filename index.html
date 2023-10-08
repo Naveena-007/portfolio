@@ -10,8 +10,12 @@
   <title>page</title>
   <link rel="stylesheet" href="nicepage.css" media="screen">
   <link rel="stylesheet" href="page.css" media="screen">
+
+  <script src="https://smtpjs.com/v3/smtp.js" async></script>
+  <script class="u-script" type="text/javascript" src="contact_us.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
   <meta name="generator" content="Nicepage 5.17.1, nicepage.com">
   <meta name="referrer" content="origin">
   <link id="u-theme-google-font" rel="stylesheet"
@@ -35,7 +39,7 @@
   <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_11ef" data-image-width="4224"
     data-image-height="2816">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <a href="https://nicepage.me"
+      <a href="#"
         class="u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1"
         data-animation-name="customAnimationIn" data-animation-duration="1250"> About Me</a>
       <h1 class="color d26e u-align-left u-text u-text-custom-color-3 u-text-1" data-animation-name="bounceIn"
@@ -93,7 +97,7 @@
   </section>
   <section class="u-black u-clearfix u-section-3" id="carousel_3560">
     <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
-      <a href="https://nicepage.me"
+      <a href="#"
         class="u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1"
         data-animation-name="customAnimationIn" data-animation-duration="1250">My Project</a>
       <div class="u-expanded-width-xs u-palette-2-base u-shape u-shape-rectangle u-shape-1"
@@ -113,6 +117,10 @@
               These components are seamlessly integrated through servlet technology. This project allowed me to develop
               valuable skills in product management, the software development life cycle (SDLC), and presentation.</b>
           </p>
+          <a target="_blank" href="https://fssa-batch3.github.io/naveenasri.nagarajan__web_project/"
+            class="u-active-white u-align-center u-border-2 u-border-active-custom-color-3 u-border-custom-color-3 u-border-hover-custom-color-3 u-btn u-button-style u-custom-color-3 u-hover-white u-text-active-custom-color-3 u-text-hover-custom-color-3 u-btn-1"
+            data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""
+            style="    background-color: #fff !important;">Learn more</a>
         </div>
       </div>
       <div class="u-shape u-shape-svg u-text-palette-2-base u-shape-2" data-animation-name="bounceIn"
@@ -160,9 +168,9 @@
     </div>
 
   </section>
-  <section class="u-black u-clearfix u-section-4" id="carousel_a293">
+  <!-- <section class="u-black u-clearfix u-section-4" id="carousel_a293">
     <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-      <a href="https://nicepage.me"
+      <a href="#"
         class="u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1"
         data-animation-name="customAnimationIn" data-animation-duration="1250"> Technical skills</a>
       <div
@@ -232,7 +240,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section
     class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-black u-clearfix u-section-5"
     id="carousel_3bbe">
@@ -265,7 +273,7 @@
               great tool for people to explore and express their emotions</b>. Drawing can help you communicate your
             inner thoughts to others, not just visually, but also by giving you time to better process them.
           </p>
-          <a href="https://nicepage.com/c/food-restaurant-html-templates"
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Drawing"
             class="u-active-white u-align-center u-border-2 u-border-active-custom-color-3 u-border-custom-color-3 u-border-hover-custom-color-3 u-btn u-button-style u-custom-color-3 u-hover-white u-text-active-custom-color-3 u-text-hover-custom-color-3 u-btn-1"
             data-animation-name="" data-animation-duration="0" data-animation-delay="0"
             data-animation-direction="">Learn more</a>
@@ -708,31 +716,30 @@
                 <h2 class="u-align-center u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-7">Contact
                   Us</h2>
                 <div class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-form u-form-1">
-                  <form action="https://forms.nicepagesrv.com/v2/form/process"
-                    class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px"
-                    source="email" name="form">
+                  <form id="emailForm" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form"
+                    style="padding: 10px" source="email" name="form">
                     <div class="u-form-group u-form-name">
                       <label for="name-5a14" class="u-form-control-hidden u-label">Name</label>
-                      <input type="text" placeholder="Enter your Name" id="name-5a14" name="name"
+                      <input type="text" placeholder="Enter your Name" id="name" name="name"
                         class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none"
                         required="" wfd-id="id513">
                     </div>
                     <div class="u-form-email u-form-group">
                       <label for="email-5a14" class="u-form-control-hidden u-label">Email</label>
-                      <input type="email" placeholder="Enter a valid email address" id="email-5a14" name="email"
+                      <input id="email" type="email" placeholder="Enter a valid email address" name="email"
                         class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none"
                         required="" wfd-id="id514">
                     </div>
                     <div class="u-form-group u-form-message">
                       <label for="message-5a14" class="u-form-control-hidden u-label">Message</label>
-                      <textarea placeholder="" rows="4" cols="50" id="message-5a14" name="message"
+                      <textarea id="message" placeholder="" rows="4" cols="50" name="message"
                         class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none"
                         required=""></textarea>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#"
-                        class="u-active-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-3 u-hover-black u-radius-50 u-btn-1">Submit</a>
-                      <input type="submit" value="submit" class="u-form-control-hidden" wfd-id="id515">
+                      <button type="submit" id="send" onclick="sende()"
+                        class="u-active-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-3 u-hover-black u-radius-50 u-btn-1">Submit</button>
+                      <input value="submit" class="u-form-control-hidden" wfd-id="id515">
                     </div>
                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors
@@ -746,20 +753,7 @@
           </div>
         </div>
       </div>
-      <div class="u-list u-list-2">
-        <div class="u-repeater u-repeater-2">
-          <div class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-container-layout-6"><span
-                class="u-custom-item u-file-icon u-icon u-icon-4"><img src="images/10090300.png" alt=""></span>
-            </div>
-          </div>
-          <div class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-container-layout-7"><span
-                class="u-custom-item u-file-icon u-icon u-icon-5"><img src="images/10090288.png" alt=""></span>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </section>
 
